@@ -72,11 +72,16 @@
   font-weight: 600;
   transition: background 0.15s, transform 0.1s;
 }
-.category-card:hover {
+.category-card:hover:not(:disabled) {
   background: color-mix(in srgb, var(--accent, #6366f1) 16%, white);
   transform: translateY(-1px);
 }
-.category-card:active { transform: translateY(0); }
+.category-card:active:not(:disabled) { transform: translateY(0); }
+.category-card.preparing {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-style: dashed;
+}
 .cat-label { font-size: 13px; }
 .cat-count { font-size: 22px; font-weight: 700; }
 

@@ -42,15 +42,17 @@ export default function HomePage({ onStartPractice, onStartExam }: Props) {
               cat.value === 'all'
                 ? allQuestions.length
                 : counts[cat.value as Category];
+            const preparing = count === 0;
             return (
               <button
                 key={cat.value}
-                className="category-card"
+                className={`category-card${preparing ? ' preparing' : ''}`}
                 style={{ '--accent': cat.color } as React.CSSProperties}
                 onClick={() => onStartPractice(cat.value)}
+                disabled={preparing}
               >
                 <span className="cat-label">{cat.label}</span>
-                <span className="cat-count">{count}問</span>
+                <span className="cat-count">{preparing ? '準備中' : `${count}問`}</span>
               </button>
             );
           })}
