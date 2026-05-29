@@ -85,6 +85,34 @@
 .cat-label { font-size: 13px; }
 .cat-count { font-size: 22px; font-weight: 700; }
 
+.source-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.source-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border: 2px solid var(--accent, #7c3aed);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent, #7c3aed) 6%, white);
+  color: var(--accent, #7c3aed);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.15s, transform 0.1s;
+}
+.source-card:hover {
+  background: color-mix(in srgb, var(--accent, #7c3aed) 14%, white);
+  transform: translateY(-1px);
+}
+.source-card:active { transform: translateY(0); }
+.source-label { flex: 1; font-size: 12px; line-height: 1.4; }
+.source-count { font-size: 18px; font-weight: 700; flex-shrink: 0; margin-left: 12px; }
+
 .exam-counts {
   display: flex;
   gap: 16px;

@@ -2,6 +2,16 @@ import { useState, useCallback } from 'react';
 import type { Question, AnswerRecord, QuizMode, Category } from '../types';
 import allQuestions from '../data/questions';
 
+export function getSourceCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  allQuestions.forEach((q) => {
+    if (q.source) {
+      counts[q.source] = (counts[q.source] ?? 0) + 1;
+    }
+  });
+  return counts;
+}
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -41,6 +51,18 @@ export function useQuiz() {
     setQuestions(shuffle(pool));
     setMode('practice');
     setFilterCategory(category);
+    setCurrentIndex(0);
+    setAnswers([]);
+    setSelectedIndex(null);
+    setShowExplanation(false);
+    setState('answering');
+  }, []);
+
+  const startPracticeBySource = useCallback((source: string) => {
+    const pool = allQuestions.filter((q) => q.source === source);
+    setQuestions(shuffle(pool));
+    setMode('practice');
+    setFilterCategory('company');
     setCurrentIndex(0);
     setAnswers([]);
     setSelectedIndex(null);
@@ -114,6 +136,7 @@ export function useQuiz() {
     showExplanation,
     score,
     startPractice,
+    startPracticeBySource,
     startExam,
     selectOption,
     next,

@@ -1,8 +1,11 @@
 import type { Category } from '../types';
+import { SOURCE_LABELS } from '../types';
+import { getSourceCounts } from '../hooks/useQuiz';
 import allQuestions from '../data/questions';
 
 interface Props {
   onStartPractice: (category: Category | 'all') => void;
+  onStartPracticeBySource: (source: string) => void;
   onStartExam: () => void;
 }
 
@@ -13,17 +16,33 @@ const CATEGORIES: { value: Category | 'all'; label: string; color: string }[] = 
   { value: 'business', label: '③ ビジネス知識', color: '#f59e0b' },
 ];
 
+const SOURCE_COLORS: Record<string, string> = {
+  governance: '#7c3aed',
+  keiei2026: '#0ea5e9',
+  kessan2025: '#059669',
+  zerocarbon_vision: '#10b981',
+  zerocarbon_roadmap: '#6ee7b7',
+};
+
 const examReady =
   allQuestions.filter((q) => q.category === 'company').length >= 30 &&
   allQuestions.filter((q) => q.category === 'society').length >= 30 &&
   allQuestions.filter((q) => q.category === 'business').length >= 20;
 
-export default function HomePage({ onStartPractice, onStartExam }: Props) {
+export default function HomePage({ onStartPractice, onStartPracticeBySource, onStartExam }: Props) {
   const counts = {
     company: allQuestions.filter((q) => q.category === 'company').length,
     society: allQuestions.filter((q) => q.category === 'society').length,
     business: allQuestions.filter((q) => q.category === 'business').length,
   };
+
+  const sourceCounts = getSourceCounts();
+  const availableSources = Object.entries(sourceCounts)
+    .filter(([, count]) => count >= 5)
+    .sort((a, b) => {
+      const order = ['governance', 'keiei2026', 'kessan2025', 'zerocarbon_vision', 'zerocarbon_roadmap'];
+      return order.indexOf(a[0]) - order.indexOf(b[0]);
+    });
 
   return (
     <div className="home">
@@ -58,6 +77,26 @@ export default function HomePage({ onStartPractice, onStartExam }: Props) {
           })}
         </div>
       </section>
+
+      {availableSources.length > 0 && (
+        <section className="section">
+          <h2 className="section-title">資料別練習（① 当社事業）</h2>
+          <p className="section-desc">添付資料ごとの問題を重点練習できます。</p>
+          <div className="source-grid">
+            {availableSources.map(([source, count]) => (
+              <button
+                key={source}
+                className="source-card"
+                style={{ '--accent': SOURCE_COLORS[source] ?? '#6366f1' } as React.CSSProperties}
+                onClick={() => onStartPracticeBySource(source)}
+              >
+                <span className="source-label">{SOURCE_LABELS[source] ?? source}</span>
+                <span className="source-count">{count}問</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="section">
         <h2 className="section-title">本番シミュレーション</h2>

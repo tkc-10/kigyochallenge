@@ -11,6 +11,7 @@ export default function App() {
     return (
       <HomePage
         onStartPractice={quiz.startPractice}
+        onStartPracticeBySource={quiz.startPracticeBySource}
         onStartExam={quiz.startExam}
       />
     );

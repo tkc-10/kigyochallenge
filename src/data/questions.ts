@@ -1348,6 +1348,7 @@ const questions: Question[] = [
   {
     id: 241,
     category: 'company',
+    source: 'governance',
     text: '関西電力グループの経営理念に定める「存在意義（Purpose）」として正しいものはどれか。',
     options: [
       '安全・安定・経済的なエネルギーを提供し続ける',
@@ -1361,6 +1362,7 @@ const questions: Question[] = [
   {
     id: 242,
     category: 'company',
+    source: 'governance',
     text: '経営理念「Purpose & Values」に掲げる「大切にする価値観（Values）」の4つの組み合わせとして正しいものはどれか。',
     options: [
       '公正・誠実・協働・挑戦',
@@ -1374,6 +1376,7 @@ const questions: Question[] = [
   {
     id: 243,
     category: 'company',
+    source: 'governance',
     text: '経営理念の「大切にする価値観」を実践する前提として正しいものはどれか。',
     options: [
       '法令遵守と社会規範の尊重を前提に',
@@ -1387,6 +1390,7 @@ const questions: Question[] = [
   {
     id: 244,
     category: 'company',
+    source: 'governance',
     text: '経営理念 Purpose & Values の存在意義（Purpose）の英語表現として正しいものはどれか。',
     options: [
       '"Creating a Sustainable Society Through Energy"',
@@ -1400,6 +1404,7 @@ const questions: Question[] = [
   {
     id: 245,
     category: 'company',
+    source: 'governance',
     text: '関西電力グループのブランドステートメントとして正しいものはどれか。',
     options: [
       '"energy with heart"',
@@ -1415,6 +1420,7 @@ const questions: Question[] = [
   {
     id: 246,
     category: 'company',
+    source: 'governance',
     text: '「関西電力グループ行動憲章」は何条で構成されているか。',
     options: ['8条', '9条', '10条', '12条'],
     correctIndex: 2,
@@ -1423,6 +1429,7 @@ const questions: Question[] = [
   {
     id: 247,
     category: 'company',
+    source: 'governance',
     text: '行動憲章の第1条に掲げられているテーマとして正しいものはどれか。',
     options: [
       '安全の確保',
@@ -1436,6 +1443,7 @@ const questions: Question[] = [
   {
     id: 248,
     category: 'company',
+    source: 'governance',
     text: '行動憲章におけるコンプライアンスの考え方として正しいものはどれか。',
     options: [
       '業績の達成を優先しつつ、法令の範囲内で行動する',
@@ -1449,6 +1457,7 @@ const questions: Question[] = [
   {
     id: 249,
     category: 'company',
+    source: 'governance',
     text: '行動憲章の第8条「地域社会の課題解決・発展に向けた取組み」において、取組みを進める際に連携する相手として正しいものはどれか。',
     options: [
       '社内関係者と連携しながら',
@@ -1462,6 +1471,7 @@ const questions: Question[] = [
   {
     id: 250,
     category: 'company',
+    source: 'governance',
     text: '行動憲章の第10条「役員の責任と本憲章の徹底」の内容として正しいものはどれか。',
     options: [
       '社長が個人として責任を負い、全社に徹底する',
@@ -1477,6 +1487,7 @@ const questions: Question[] = [
   {
     id: 251,
     category: 'company',
+    source: 'governance',
     text: '関西電力の社訓として正しいものはどれか。',
     options: [
       '良識・誠実・挑戦',
@@ -1490,6 +1501,7 @@ const questions: Question[] = [
   {
     id: 252,
     category: 'company',
+    source: 'governance',
     text: '関西電力の社訓「良識・勤勉・友愛」について正しいものはどれか。',
     options: [
       '創業時に取締役会で正式に制定された',
@@ -1503,6 +1515,7 @@ const questions: Question[] = [
   {
     id: 253,
     category: 'company',
+    source: 'governance',
     text: '「公正な競争の実現に向けたコミットメント」が策定された背景となった関西電力グループの問題として正しいものはどれか。',
     options: [
       '独占禁止法違反行為のみ',
@@ -1516,6 +1529,7 @@ const questions: Question[] = [
   {
     id: 254,
     category: 'company',
+    source: 'governance',
     text: '「公正な競争の実現に向けたコミットメント」に記載されているサービスの実現方法として正しいものはどれか。',
     options: [
       '地域独占を活かしてお客さまに最良のサービスを提供する',
@@ -1531,6 +1545,7 @@ const questions: Question[] = [
   {
     id: 255,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において「KX」が意味するものとして正しいものはどれか。',
     options: [
       'Kansai Excellence',
@@ -1544,6 +1559,7 @@ const questions: Question[] = [
   {
     id: 256,
     category: 'company',
+    source: 'keiei2026',
     text: '中期経営計画（2021-2025）のKXを構成する3つの変革として正しい組み合わせはどれか。',
     options: [
       'EX・VX・SX',
@@ -1557,6 +1573,7 @@ const questions: Question[] = [
   {
     id: 257,
     category: 'company',
+    source: 'keiei2026',
     text: 'KXにおけるEXが意味するものとして正しいものはどれか。',
     options: [
       'Employee Transformation',
@@ -1570,6 +1587,7 @@ const questions: Question[] = [
   {
     id: 258,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における2040年の目指す姿として正しいものはどれか。',
     options: [
       '「関西地域のエネルギー供給に特化し、地域No.1を維持する」',
@@ -1583,6 +1601,7 @@ const questions: Question[] = [
   {
     id: 259,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026に記載される「S+3E」の内容として正しい組み合わせはどれか。',
     options: [
       'Safety ＋ Energy Security ＋ Economic Efficiency ＋ Environment',
@@ -1596,6 +1615,7 @@ const questions: Question[] = [
   {
     id: 260,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において、現下の世界情勢において特に重視すべきとされているものはどれか。',
     options: [
       'Environment（脱炭素）',
@@ -1611,6 +1631,7 @@ const questions: Question[] = [
   {
     id: 261,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において、2026年度から2040年度までの累計投資目標として正しいものはどれか。',
     options: ['5兆円', '10兆円', '15兆円', '20兆円'],
     correctIndex: 2,
@@ -1619,6 +1640,7 @@ const questions: Question[] = [
   {
     id: 262,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における向こう3年間（2026-2028年度）の投資内訳として正しいものはどれか。',
     options: [
       '安全・安定供給のための維持投資1兆円 ＋ 成長投資1.5兆円 ＝ 計2.5兆円',
@@ -1632,6 +1654,7 @@ const questions: Question[] = [
   {
     id: 263,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026（2026-2028年度平均）における財務目標のROICとして正しいものはどれか。',
     options: ['2.5%以上', '3.3%以上', '4.4%以上', '5.0%以上'],
     correctIndex: 1,
@@ -1640,6 +1663,7 @@ const questions: Question[] = [
   {
     id: 264,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026（2026-2028年度平均）における財務目標のROEとして正しいものはどれか。',
     options: ['6.0%以上', '7.0%以上', '8.0%以上', '10.0%以上'],
     correctIndex: 2,
@@ -1648,6 +1672,7 @@ const questions: Question[] = [
   {
     id: 265,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026（2026-2028年度平均）における財務目標のEBITDAとして正しいものはどれか。',
     options: ['5,000億円以上', '6,000億円以上', '7,000億円以上', '8,000億円以上'],
     correctIndex: 3,
@@ -1656,6 +1681,7 @@ const questions: Question[] = [
   {
     id: 266,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における株主還元方針として正しいものはどれか。',
     options: [
       '配当性向20～30%目安、26-28年度累計2,000億円以上',
@@ -1669,6 +1695,7 @@ const questions: Question[] = [
   {
     id: 267,
     category: 'company',
+    source: 'kessan2025',
     text: '2025年度（中期経営計画目標年度）の連結経常利益の実績として正しいものはどれか。',
     options: ['3,000億円', '3,600億円', '4,500億円', '5,185億円'],
     correctIndex: 3,
@@ -1677,6 +1704,7 @@ const questions: Question[] = [
   {
     id: 268,
     category: 'company',
+    source: 'kessan2025',
     text: '2025年度末（2026年3月時点）の自己資本比率の実績として正しいものはどれか。',
     options: ['25.3%', '28.5%', '35.1%', '40.2%'],
     correctIndex: 2,
@@ -1685,6 +1713,7 @@ const questions: Question[] = [
   {
     id: 269,
     category: 'company',
+    source: 'kessan2025',
     text: '2025年度のセグメント別経常利益のうち、エネルギー事業の実績として正しいものはどれか。',
     options: ['1,890億円', '2,750億円', '3,773億円', '4,200億円'],
     correctIndex: 2,
@@ -1693,6 +1722,7 @@ const questions: Question[] = [
   {
     id: 270,
     category: 'company',
+    source: 'kessan2025',
     text: '2025年度の原子力利用率の実績として正しいものはどれか。',
     options: ['72.3%', '78.5%', '84.1%', '90.2%'],
     correctIndex: 2,
@@ -1703,6 +1733,7 @@ const questions: Question[] = [
   {
     id: 271,
     category: 'company',
+    source: 'keiei2026',
     text: '2026年度からの事業セグメント体系変更として正しいものはどれか。',
     options: [
       '「生活・ビジネスソリューション事業」が「住宅・不動産事業」に名称変更された',
@@ -1716,6 +1747,7 @@ const questions: Question[] = [
   {
     id: 272,
     category: 'company',
+    source: 'keiei2026',
     text: '2026年度から「生活・ビジネスソリューション事業」はどのセグメント名に変更されたか。',
     options: [
       '生活サービス事業',
@@ -1729,6 +1761,7 @@ const questions: Question[] = [
   {
     id: 273,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において2040年時点の発電設備容量の目標として正しいものはどれか。',
     options: [
       '現状から2割増',
@@ -1742,6 +1775,7 @@ const questions: Question[] = [
   {
     id: 274,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において2040年時点のGHG排出量（Scope1、2）削減目標として正しいものはどれか。',
     options: [
       '2013年度比50%削減',
@@ -1757,6 +1791,7 @@ const questions: Question[] = [
   {
     id: 275,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において「HSDC」の正式名称として正しいものはどれか。',
     options: [
       'High Speed Data Communication',
@@ -1770,6 +1805,7 @@ const questions: Question[] = [
   {
     id: 276,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における2040年（2035年までに達成）のHSDCの目標として正しいものはどれか。',
     options: [
       '総受電容量500MW',
@@ -1783,6 +1819,7 @@ const questions: Question[] = [
   {
     id: 277,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における2040年時点の水素事業の目標として正しいものはどれか。',
     options: [
       '取扱量の全国シェア1割',
@@ -1796,6 +1833,7 @@ const questions: Question[] = [
   {
     id: 278,
     category: 'company',
+    source: 'keiei2026',
     text: '中期経営計画（2021-2025）においてEX（エネルギー変革）で達成した水素混焼の実績として正しいものはどれか。',
     options: [
       '日本初の事業用大型ガスタービンを活用した混焼率10%（体積比）を達成',
@@ -1809,6 +1847,7 @@ const questions: Question[] = [
   {
     id: 279,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026に記載されているインターネット回線のお客さま満足度の記録として正しいものはどれか。',
     options: [
       '関西No.1を9年連続',
@@ -1822,6 +1861,7 @@ const questions: Question[] = [
   {
     id: 280,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において明示されている関西電力グループの国内ゼロカーボン発電電力量（2026年3月時点）として正しいものはどれか。',
     options: [
       '約280億kWh',
@@ -1835,6 +1875,7 @@ const questions: Question[] = [
   {
     id: 281,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において明示されている関西電力グループの現在の運用発電設備容量（2026年3月時点）として正しいものはどれか。',
     options: [
       '約1,800万kW',
@@ -1848,6 +1889,7 @@ const questions: Question[] = [
   {
     id: 282,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026に記載された蹴上発電所の運転開始年として正しいものはどれか。',
     options: [
       '明治24年（1891年）',
@@ -1861,6 +1903,7 @@ const questions: Question[] = [
   {
     id: 283,
     category: 'company',
+    source: 'keiei2026',
     text: 'BX（Business Transformation）のコスト削減について、中期経営計画（2021-2025）の目標と実績の組み合わせとして正しいものはどれか。',
     options: [
       '目標1,900億円に対し実績1,900億円を超え達成',
@@ -1876,6 +1919,7 @@ const questions: Question[] = [
   {
     id: 284,
     category: 'company',
+    source: 'zerocarbon_vision',
     text: 'ゼロカーボンビジョン2050における関西電力グループの位置づけとして正しいものはどれか。',
     options: [
       '「カーボンニュートラルエネルギーの普及企業」',
@@ -1889,6 +1933,7 @@ const questions: Question[] = [
   {
     id: 285,
     category: 'company',
+    source: 'zerocarbon_vision',
     text: 'ゼロカーボンビジョン2050において、2050年のデマンドサイドのエネルギー利用はどうなると描かれているか。',
     options: [
       '「電気」と「水素」に集約されていく',
@@ -1902,6 +1947,7 @@ const questions: Question[] = [
   {
     id: 286,
     category: 'company',
+    source: 'zerocarbon_vision',
     text: '「ゼロカーボンビジョン2050」取組みの3つの柱として正しい組み合わせはどれか。',
     options: [
       '①再生可能エネルギーの最大導入 ②原子力の安全最大活用 ③CCUS技術開発',
@@ -1915,6 +1961,7 @@ const questions: Question[] = [
   {
     id: 287,
     category: 'company',
+    source: 'zerocarbon_vision',
     text: 'ゼロカーボンビジョン2050において2050年のエネルギーシステムを描く「3D+D」の内容として正しいものはどれか。',
     options: [
       '脱炭素化・分散化・デジタル化 ＋ 電化',
@@ -1928,6 +1975,7 @@ const questions: Question[] = [
   {
     id: 288,
     category: 'company',
+    source: 'zerocarbon_vision',
     text: 'ゼロカーボンビジョン2050において、DACCS技術の説明として正しいものはどれか。',
     options: [
       '排ガスからCO2を回収し、有効利用または地中等に貯留する技術',
@@ -1943,6 +1991,7 @@ const questions: Question[] = [
   {
     id: 289,
     category: 'company',
+    source: 'governance',
     text: '関西電力のコーポレートガバナンス・ガイドラインにおいて採用されている機関設計として正しいものはどれか。',
     options: [
       '監査役会設置会社',
@@ -1956,6 +2005,7 @@ const questions: Question[] = [
   {
     id: 290,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおける取締役会の構成として正しいものはどれか。',
     options: [
       '取締役の員数は15名以内で、3分の1以上を独立社外取締役とする',
@@ -1969,6 +2019,7 @@ const questions: Question[] = [
   {
     id: 291,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおける取締役会議長として正しいものはどれか。',
     options: [
       '代表執行役社長が務める',
@@ -1982,6 +2033,7 @@ const questions: Question[] = [
   {
     id: 292,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおいて、指名委員会・報酬委員会・監査委員会の各委員長の要件として共通して正しいものはどれか。',
     options: [
       '社内取締役が務める',
@@ -1995,6 +2047,7 @@ const questions: Question[] = [
   {
     id: 293,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおけるコンプライアンス委員会の構成として正しいものはどれか。',
     options: [
       '委員の過半数を独立社外取締役とし、委員長は独立社外取締役とする',
@@ -2008,6 +2061,7 @@ const questions: Question[] = [
   {
     id: 294,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおける執行役会議の開催頻度として正しいものはどれか。',
     options: [
       '原則として毎月開催',
@@ -2021,6 +2075,7 @@ const questions: Question[] = [
   {
     id: 295,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおける取締役会の主要な3つの責務として正しい組み合わせはどれか。',
     options: [
       '①企業戦略等の大きな方向性を示す ②株主配当の最大化 ③コンプライアンス体制の構築',
@@ -2034,6 +2089,7 @@ const questions: Question[] = [
   {
     id: 296,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインにおける経営の最重要課題として定められているものはどれか。',
     options: [
       '安全・安定供給の維持',
@@ -2049,6 +2105,7 @@ const questions: Question[] = [
   {
     id: 297,
     category: 'company',
+    source: 'governance',
     text: '関西電力グループの内部統制システムの問題を指摘した「第三者委員会」による問題の根本的な原因として正しいものはどれか。',
     options: [
       '役員の個人的な資質の欠如と採用基準の甘さ',
@@ -2062,6 +2119,7 @@ const questions: Question[] = [
   {
     id: 298,
     category: 'company',
+    source: 'governance',
     text: '日本の会社法の施行年月として正しいものはどれか。',
     options: [
       '2004年5月施行',
@@ -2075,6 +2133,7 @@ const questions: Question[] = [
   {
     id: 299,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインの制定年月と最終改正年月の組み合わせとして正しいものはどれか。',
     options: [
       '2018年6月制定 / 2024年4月最終改正',
@@ -2090,6 +2149,7 @@ const questions: Question[] = [
   {
     id: 300,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における向こう3年間（26-28年度）の資産入替目標として正しいものはどれか。',
     options: [
       '不動産事業における資産回転3,000億円以上 ＋ 保有株式等2,000億円以上',
@@ -2103,6 +2163,7 @@ const questions: Question[] = [
   {
     id: 301,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026に掲げる2040年時点の不動産事業・情報通信事業の利益規模目標として共通して正しいものはどれか。',
     options: [
       '2025年度比1.5倍に拡大',
@@ -2116,6 +2177,7 @@ const questions: Question[] = [
   {
     id: 302,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026で示された海外エネルギー事業の実績として正しいものはどれか。',
     options: [
       '21カ国に拠点を設置し、海外事業利益が50億円規模に成長',
@@ -2129,6 +2191,7 @@ const questions: Question[] = [
   {
     id: 303,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026で記載されているROIC-WACCスプレッドの目標として正しいものはどれか。',
     options: [
       '50～100bps',
@@ -2142,6 +2205,7 @@ const questions: Question[] = [
   {
     id: 304,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026で示された電力需要の見通しについて正しいものはどれか。',
     options: [
       '人口減少により電力需要は中長期的に減少すると見込まれている',
@@ -2155,6 +2219,7 @@ const questions: Question[] = [
   {
     id: 305,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループの不動産事業の売上高成長率（経営計画2026記載）として正しいものはどれか。',
     options: [
       '約2%／年（2016年の事業再編以降の9年間の平均）',
@@ -2172,6 +2237,7 @@ const questions: Question[] = [
   {
     id: 306,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループのGHG排出量（Scope1、2）削減目標として、2030年度の目標として正しいものはどれか。',
     options: [
       '2013年度比40%削減',
@@ -2185,6 +2251,7 @@ const questions: Question[] = [
   {
     id: 307,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループの2024年度のGHG排出量（Scope1、2）実績として正しいものはどれか。',
     options: [
       '4,700万t-CO2（2013年度比8%削減）',
@@ -2198,6 +2265,7 @@ const questions: Question[] = [
   {
     id: 308,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループが2025年4月に制定した「生物多様性の取組みに関する基本方針」に掲げる「ありたい姿」として正しいものはどれか。',
     options: [
       '「生物多様性の保護を最優先し、一切の開発行為を停止する」',
@@ -2211,6 +2279,7 @@ const questions: Question[] = [
   {
     id: 309,
     category: 'company',
+    source: 'keiei2026',
     text: 'TNFD（自然関連財務情報開示タスクフォース）レポート2025で分析対象とした関西電力の発電拠点数として正しいものはどれか。',
     options: [
       '計50拠点（火力5・原子力3・水力40・再エネ2）',
@@ -2224,6 +2293,7 @@ const questions: Question[] = [
   {
     id: 310,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループのTNFD対応で活用している「LEAP分析」のLEAPが表す内容として正しいものはどれか。',
     options: [
       'L：Locate（発見する）、E：Evaluate（診断する）、A：Assess（評価する）、P：Prepare（準備する）',
@@ -2237,6 +2307,7 @@ const questions: Question[] = [
   {
     id: 311,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループのサステナビリティ推進会議について正しいものはどれか。',
     options: [
       '社外有識者が委員長を務め、年1回開催される',
@@ -2252,6 +2323,7 @@ const questions: Question[] = [
   {
     id: 312,
     category: 'company',
+    source: 'keiei2026',
     text: '行動憲章の第5条に掲げられているテーマとして正しいものはどれか。',
     options: [
       'コンプライアンスの実践・徹底',
@@ -2265,6 +2337,7 @@ const questions: Question[] = [
   {
     id: 313,
     category: 'company',
+    source: 'keiei2026',
     text: '行動憲章の第9条に掲げられているテーマとして正しいものはどれか。',
     options: [
       '地域社会の課題解決・発展に向けた取組み',
@@ -2278,6 +2351,7 @@ const questions: Question[] = [
   {
     id: 314,
     category: 'company',
+    source: 'keiei2026',
     text: '行動憲章の「基本的な考え方」において、行動憲章の位置づけとして正しいものはどれか。',
     options: [
       '行動憲章は経営理念とは独立した独自の規範であり、経営理念より優先される',
@@ -2293,6 +2367,7 @@ const questions: Question[] = [
   {
     id: 315,
     category: 'company',
+    source: 'kessan2025',
     text: '2026年度の連結経常利益予想として正しいものはどれか（2025年5月時点の予想）。',
     options: [
       '5,500億円（前年度比増加）',
@@ -2306,6 +2381,7 @@ const questions: Question[] = [
   {
     id: 316,
     category: 'company',
+    source: 'keiei2026',
     text: '中期経営計画（2021-2025年度）のEX（エネルギー変革）における実際の累積投資実績として正しいものはどれか。',
     options: [
       '目標1兆500億円に対し実績は8,000億円（目標未達）',
@@ -2319,6 +2395,7 @@ const questions: Question[] = [
   {
     id: 317,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における成長投資3,000億円（26-28年度累計）の内訳として正しいものはどれか。',
     options: [
       'エネルギー2,000億円・情報通信500億円・不動産500億円',
@@ -2332,6 +2409,7 @@ const questions: Question[] = [
   {
     id: 318,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインに定める顧問制度について正しいものはどれか。',
     options: [
       '顧問は取締役・執行役と同等の経営への指導・助言を行う重要な役割を担う',
@@ -2345,6 +2423,7 @@ const questions: Question[] = [
   {
     id: 319,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において挙げられている関西電力グループの電力ネットワーク（送配電）の規模として正しいものはどれか。',
     options: [
       '送配電線総延長約5万km・変電所約100カ所',
@@ -2358,6 +2437,7 @@ const questions: Question[] = [
   {
     id: 320,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において記載されているコーポレートPPA（法人向け再エネ電力購入契約）の採用実績として正しいものはどれか。',
     options: [
       '国内シェア50%を超え独占的地位を確立している（累計採用容量）',
@@ -2371,6 +2451,7 @@ const questions: Question[] = [
   {
     id: 321,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループが提供する分散型エネルギーリソース最適制御サービス「SenaSon（セナソン）」に関する説明として正しいものはどれか。',
     options: [
       'SenaSonは太陽光パネルの設置・保守を一括サポートするサービスである',
@@ -2384,6 +2465,7 @@ const questions: Question[] = [
   {
     id: 322,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力グループの組織風土改革の社内イベント「ええやん！Day」について正しいものはどれか。',
     options: [
       'ええやん！Dayは2021-2025年度の5年間で計53回開催された',
@@ -2397,6 +2479,7 @@ const questions: Question[] = [
   {
     id: 323,
     category: 'company',
+    source: 'keiei2026',
     text: '関西電力の不動産事業における実績として正しいものはどれか。',
     options: [
       '全国の分譲マンション供給シェアで3年連続No.1を達成',
@@ -2410,6 +2493,7 @@ const questions: Question[] = [
   {
     id: 324,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026における3線管理（リスク管理体制）について正しいものはどれか。',
     options: [
       '第1線：内部監査部門、第2線：業務執行部門、第3線：外部監査人',
@@ -2423,6 +2507,7 @@ const questions: Question[] = [
   {
     id: 325,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026に記載されている関西電力グループの情報通信事業の売上高成長率として正しいものはどれか（2015年以降10年間の平均）。',
     options: [
       '約2%／年',
@@ -2436,6 +2521,7 @@ const questions: Question[] = [
   {
     id: 326,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインに定める取締役会の3つの主要な責務のうち、正しく含まれているものはどれか。',
     options: [
       '「株主へのインサイダー情報の提供」',
@@ -2449,6 +2535,7 @@ const questions: Question[] = [
   {
     id: 327,
     category: 'company',
+    source: 'governance',
     text: 'コーポレートガバナンス・ガイドラインに定める内部通報制度について正しいものはどれか。',
     options: [
       '内部通報制度への通報は匿名では受け付けられない',
@@ -2462,6 +2549,7 @@ const questions: Question[] = [
   {
     id: 328,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026で示された向こう3年間（2026-2028年度）のNet Debt/EBITDA目標として正しいものはどれか。',
     options: [
       '2倍程度',
@@ -2475,6 +2563,7 @@ const questions: Question[] = [
   {
     id: 329,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026において2040年の目指す姿の副題として正しいものはどれか。',
     options: [
       '「多様なステークホルダーの皆さまとともに新たな価値を創り、共感と成長を分かち合う」',
@@ -2488,6 +2577,7 @@ const questions: Question[] = [
   {
     id: 330,
     category: 'company',
+    source: 'keiei2026',
     text: '経営計画2026で示された2040年時点の海外エネルギー事業の目標として正しいものはどれか。',
     options: [
       '海外からの撤退を完了し、国内事業に集中する',
@@ -2497,6 +2587,551 @@ const questions: Question[] = [
     ],
     correctIndex: 1,
     explanation: '経営計画2026では2040年に向けて海外エネルギー事業の「事業ポートフォリオを強化し、利益規模を約2倍に拡大」することが目標として示されています。情報通信・不動産事業も同様に利益規模2倍を目標としています。',
+  },
+
+  // ==========================================
+  // ① 当社事業 – コーポレートガバナンス・ガイドライン（追加）
+  // ==========================================
+
+  {
+    id: 331,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインの目的として正しいものはどれか。',
+    options: [
+      'ステークホルダーのみなさまに対する説明責任を果たすとともに株主との長期にわたる信頼関係の構築・確保を目指す',
+      '株主への配当方針を定め安定した財務運営を行う',
+      '社員のコンプライアンス意識を向上させ内部統制を強化する',
+      '取引先との良好な関係を維持し事業の継続性を確保する',
+    ],
+    correctIndex: 0,
+    explanation: 'ガイドラインの目的は「ステークホルダーのみなさまに対する説明責任を果たすとともに株主との長期に亘る信頼関係の構築・確保を目指す」ことです。また形骸化しないよう不断に見直し、常に最善のコーポレート・ガバナンスを維持するよう努めることも明記されています。',
+  },
+  {
+    id: 332,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインで定める取締役会の員数として正しいものはどれか。',
+    options: ['10名以内', '15名以内', '20名以内', '25名以内'],
+    correctIndex: 2,
+    explanation: '「適切な意思決定と実効的な監督を行う観点から、取締役会を構成する取締役の員数は、20名以内とし、その過半数を独立社外取締役とする」と定められています。',
+  },
+  {
+    id: 333,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける監査委員会の構成員の要件として正しいものはどれか。',
+    options: [
+      '執行役を兼ねる取締役で構成し、過半数を独立社外取締役とする',
+      '執行役を兼ねない取締役のみで構成し、過半数を独立社外取締役とする',
+      '独立社外取締役のみで構成する',
+      '経営経験を有する社内取締役のみで構成する',
+    ],
+    correctIndex: 1,
+    explanation: '監査委員会は「執行役を兼ねない取締役のみで構成し、その過半数を独立社外取締役とする。また、委員長は、独立社外取締役とする」と定められています。これは指名委員会・報酬委員会と同様です。',
+  },
+  {
+    id: 334,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける政策保有株式の保有意義の検証について正しいものはどれか。',
+    options: [
+      '毎年、指名委員会において個別に保有意義を検証する',
+      '毎年、取締役会において個別に保有意義を検証する',
+      '3年ごとに、取締役会において一括して保有意義を検証する',
+      '保有意義の検証は経営判断に委ねられており、特定の規定はない',
+    ],
+    correctIndex: 1,
+    explanation: '政策保有株式については「毎年、取締役会において個別に保有意義を検証し、保有意義が乏しいと判断した株式については、市場動向等を考慮して売却する」と定められています。',
+  },
+  {
+    id: 335,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインで定める株主総会招集通知の早期公表に関する方針として正しいものはどれか。',
+    options: [
+      '株主総会開催日の2週間前に公表するよう努める',
+      '株主総会開催日の3週間前に公表するよう努める',
+      '株主総会開催日の4週間前に公表するよう努める',
+      '株主総会開催日の6週間前に公表するよう努める',
+    ],
+    correctIndex: 2,
+    explanation: '「招集通知の早期の発送とともに、発送に先立ち、その内容を証券取引所および当社ホームページにより、株主総会開催日の4週間前に公表するよう努める」と定められています。',
+  },
+  {
+    id: 336,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける取締役会の実効性評価の方法として正しいものはどれか。',
+    options: [
+      '年1回、内部監査部門が全取締役を対象にアンケートを実施し自己評価を行う',
+      '年1回、第三者機関を活用し全取締役を対象にアンケートを実施して評価を行う',
+      '2年に1回、外部コンサルタントによるインタビューを実施し評価を行う',
+      '毎年、報酬委員会が各取締役の職務執行を評価する',
+    ],
+    correctIndex: 1,
+    explanation: '「取締役会は、年1回、第三者機関を活用し、全取締役を対象に、取締役会等の実効性に関するアンケートを実施し、その分析結果を踏まえて、取締役会等の実効性について評価を行い、取締役会運営をはじめとしたコーポレート・ガバナンスの改善を図る」と定められています。',
+  },
+  {
+    id: 337,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインに定める「当社が定める独立性基準」の項目数として正しいものはどれか。',
+    options: ['5項目', '7項目', '9項目', '12項目'],
+    correctIndex: 2,
+    explanation: '独立性基準は1〜9の9項目が定められており、社外取締役候補がこれらのいずれにも該当しない場合に独立性を有するものと判断されます。',
+  },
+  {
+    id: 338,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインに記載されている、当社がダイバーシティ推進の専門組織を設置した年として正しいものはどれか。',
+    options: ['2005年', '2008年', '2011年', '2015年'],
+    correctIndex: 2,
+    explanation: '「当社は2011年にダイバーシティ推進の専門組織を設置し、『一人ひとりの多様性が活かされて、個人が成長し、組織の力になっている状態』の実現を目指し、グループ全体で取り組んでいる」と記載されています。',
+  },
+  {
+    id: 339,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインに記載されている、当社の確定拠出年金の導入年として正しいものはどれか。',
+    options: ['1999年', '2001年', '2005年', '2010年'],
+    correctIndex: 2,
+    explanation: '「当社は2005年以降確定拠出年金を導入しており」と記載されています。また当社は企業年金の積立金の運用は行っていません。',
+  },
+  {
+    id: 340,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける執行役（業務執行を担う）の報酬体系として正しいものはどれか。',
+    options: [
+      '基本報酬のみで構成する',
+      '基本報酬と業績連動報酬の2本立てで構成する',
+      '基本報酬・業績連動報酬（短期インセンティブ）・株式報酬（中長期インセンティブ）の3本立てで構成する',
+      '株式報酬のみで構成する',
+    ],
+    correctIndex: 2,
+    explanation: '執行役の報酬は「各執行役の地位等に応じて求められる職責などを勘案した基本報酬に加えて、短期インセンティブ報酬としての業績連動報酬および中長期インセンティブ報酬としての株式報酬で構成する」と定められています。業務執行を担わない取締役は基本報酬のみです。',
+  },
+  {
+    id: 341,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、株主総会での会社提案に特に多くの反対票が投じられた場合の対応として正しいものはどれか。',
+    options: [
+      '反対票が20%を超えた提案については、翌年に再度付議することを検討する',
+      '反対票が30%を超えた提案については、分析結果をもとに株主との対話等必要な対応を検討する',
+      '反対票が過半数となった提案については、即時撤回する',
+      '反対票の割合にかかわらず可決された提案はそのまま実施する',
+    ],
+    correctIndex: 1,
+    explanation: '「特に30%を超える反対票が投じられた会社提案については、分析結果をもとに、株主との対話等、必要な対応を検討する」と定められています。',
+  },
+  {
+    id: 342,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける顧問の役割として正しいものはどれか。',
+    options: [
+      '取締役会に出席し、重要な議案に対して意見を述べる',
+      '財界活動・業界活動・地域経済からの要請への対応など社会貢献活動を行う一方、経営への指導・助言活動は行わない',
+      '海外事業の推進に専念し、グローバル展開を支援する',
+      '執行役の業務を補佐し、重要な意思決定を支援する',
+    ],
+    correctIndex: 1,
+    explanation: '顧問は「自らの経験や人脈等を活かし、財界活動、業界活動、地域経済からの要請への対応など、関西経済および当社グループ事業の発展につながる社会貢献活動を行う一方、経営への指導および助言活動は行わない」と定められています。',
+  },
+  {
+    id: 343,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、役員（取締役および執行役等）がコンプライアンス上問題となる事象を認識した場合の報告先として正しいものはどれか。',
+    options: [
+      '社長および法務部門',
+      '内部監査部門',
+      'コンプライアンス委員会の社外委員および取締役会議長',
+      '外部弁護士および証券取引所',
+    ],
+    correctIndex: 2,
+    explanation: '「役員（取締役および執行役等）は、コンプライアンス上問題となる事象、またはその発生のおそれを認識した場合、報告する義務を負い、報告先はコンプライアンス委員会の社外委員および取締役会議長とする」と定められています。',
+  },
+  {
+    id: 344,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、取締役・執行役の利益相反取引の承認機関として正しいものはどれか。',
+    options: ['報酬委員会', '監査委員会', '取締役会', '株主総会'],
+    correctIndex: 2,
+    explanation: '「当社は、取締役・執行役の利益相反取引については、取締役会にて承認を得ることとする」と定められています。その他の関連当事者間の取引については会社法等の法令および東京証券取引所が定める規則に従い適切に開示します。',
+  },
+  {
+    id: 345,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、買収防衛策を導入する場合に監査を行う機関として正しいものはどれか。',
+    options: ['指名委員会', '報酬委員会', '監査委員会', 'コンプライアンス委員会'],
+    correctIndex: 2,
+    explanation: '「買収防衛策を導入する場合には監査委員会が監査を行う」と定められています。また株主の利益を害する可能性のある大規模な希釈化をもたらす資本政策を実施する場合も、監査委員会が監査を実施します。',
+  },
+  {
+    id: 346,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、株主総会の開催日について定められている方針として正しいものはどれか。',
+    options: [
+      'いわゆる「集中日」に設定するように努める',
+      'いわゆる「集中日」を回避した日に設定するように努める',
+      '毎年6月の第4木曜日に設定する',
+      '株主の利便性を最優先し、土曜日または日曜日に設定するよう努める',
+    ],
+    correctIndex: 1,
+    explanation: '「いわゆる『集中日』を回避した日に設定するように努める」と定められています。これは株主が適切に議決権を行使できる環境を整備するためです。',
+  },
+  {
+    id: 347,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインに記載されている「調達等審査委員会」の構成として正しいものはどれか。',
+    options: [
+      '社内有識者が過半数を占める委員会',
+      '社外有識者が過半数を占める委員会',
+      '取締役のみで構成される委員会',
+      '内部監査部門が主体となる委員会',
+    ],
+    correctIndex: 1,
+    explanation: '「工事の発注や契約手続き、寄付金や協力金に関する拠出手続きの適切性・透明性を確保することを目的に、社外有識者を過半数とする『調達等審査委員会』を設置する」と定められています。',
+  },
+  {
+    id: 348,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける原子力安全の継承に関する記述として正しいものはどれか。',
+    options: [
+      '原子力安全に関わる理念を社内規程として定め、従業員のみに周知する',
+      '将来世代の従業員まで引き継いでいく原子力安全に係わる理念を社告「原子力発電の安全性向上への決意」として明文化し、たゆまぬ安全性向上に取り組む',
+      '原子力安全については各発電所の自主的な取り組みに委ねる',
+      '原子力安全についてはIAEAの国際指針に従うのみとする',
+    ],
+    correctIndex: 1,
+    explanation: '「将来世代の従業員まで引き継いでいく原子力安全に係わる理念を社告『原子力発電の安全性向上への決意』として明文化し、これに基づき、たゆまぬ安全性向上に取り組む」と記載されています。また原子力安全推進委員会と原子力安全検証委員会（社外の有識者が主体）を設置しています。',
+  },
+  {
+    id: 349,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおける海外投資家向けの情報提供の方針として正しいものはどれか。',
+    options: [
+      '全ての情報開示書類を日本語と英語の両言語で同時に公開する',
+      '海外投資家に向けての情報提供として必要に応じて英語版の媒体を作成する',
+      '英語での情報提供は行わず、日本語のみで開示する',
+      '海外子会社が各国語で情報を開示する',
+    ],
+    correctIndex: 1,
+    explanation: '「また海外投資家に向けての情報提供として必要に応じて英語版の媒体を作成する」と定められています。',
+  },
+  {
+    id: 350,
+    category: 'company',
+    source: 'governance',
+    text: 'コーポレートガバナンス・ガイドラインにおいて、指名委員会が担う「最も重要な戦略的意思決定」として正しいものはどれか。',
+    options: [
+      '年次配当の決定',
+      '大型設備投資の承認',
+      '執行役社長の選定',
+      '中期経営計画の策定',
+    ],
+    correctIndex: 2,
+    explanation: '「指名委員会は、グループ全体の持続的成長と、中長期的な企業価値の向上のため、執行役社長の選定を、最も重要な戦略的意思決定であると捉え、十分な時間と資源をかけて後継者計画の策定・運営、ならびに後継者候補の計画的育成に取り組む」と定められています。',
+  },
+
+  // ==========================================
+  // ① 当社事業 – 2025年度決算説明資料（追加）
+  // ==========================================
+
+  {
+    id: 351,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2025年度の連結売上高として正しいものはどれか。',
+    options: ['28,500億円', '35,200億円', '40,566億円', '45,100億円'],
+    correctIndex: 2,
+    explanation: '2025年度の連結売上高は40,566億円でした。なお2025年度の連結経常利益は5,185億円（前年度比△131億円）です。',
+  },
+  {
+    id: 352,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2025年度の連結当期純利益として正しいものはどれか。',
+    options: ['1,900億円', '2,500億円', '3,800億円', '5,100億円'],
+    correctIndex: 2,
+    explanation: '2025年度の連結当期純利益は3,800億円でした。なお2026年度の当期純利益予想は3,100億円（前年度比△700億円）と大幅な減少が見込まれています。',
+  },
+  {
+    id: 353,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2026年度の連結当期純利益予想として正しいものはどれか（2025年5月時点の予想）。',
+    options: ['1,800億円', '2,200億円', '3,100億円', '4,500億円'],
+    correctIndex: 2,
+    explanation: '2026年度の連結当期純利益予想は3,100億円です。2025年度実績の3,800億円から700億円の減少が見込まれており、主な要因は原子力利用率の低下です。',
+  },
+  {
+    id: 354,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2026年度の年間配当予想として正しいものはどれか（2025年5月時点の予想）。',
+    options: ['60円', '70円', '80円', '100円'],
+    correctIndex: 2,
+    explanation: '2026年度の年間配当予想は80円（中間40円＋期末40円）です。',
+  },
+  {
+    id: 355,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2026年度の配当予想（中間・期末の内訳）として正しいものはどれか（2025年5月時点の予想）。',
+    options: [
+      '中間30円＋期末50円＝年間80円',
+      '中間40円＋期末40円＝年間80円',
+      '中間50円＋期末30円＝年間80円',
+      '中間35円＋期末45円＝年間80円',
+    ],
+    correctIndex: 1,
+    explanation: '2026年度の配当予想は中間40円＋期末40円＝年間80円です。',
+  },
+  {
+    id: 356,
+    category: 'company',
+    source: 'kessan2025',
+    text: '原子力利用率が1%変化した場合の関西電力グループの収支への影響として正しいものはどれか。',
+    options: ['約10億円', '約30億円', '約46億円', '約100億円'],
+    correctIndex: 2,
+    explanation: '原子力利用率±1%の収支影響は約±46億円です。2026年度は原子力利用率が2025年度の84.1%から70%程度に低下する見通しであり、これが経常利益減少の主因となっています。',
+  },
+  {
+    id: 357,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2025年度の成長事業への実際の投資実績として正しいものはどれか。',
+    options: ['約500億円', '約1,000億円', '約1,850億円', '約3,000億円'],
+    correctIndex: 2,
+    explanation: '2025年度の成長事業への投資実績は計1,850億円でした。当初の見通し3,000億円には未達となっています。',
+  },
+  {
+    id: 358,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2025年度の成長事業投資の見通しと実績の組み合わせとして正しいものはどれか。',
+    options: [
+      '見通し2,000億円に対し、実績1,850億円',
+      '見通し3,000億円に対し、実績1,850億円',
+      '見通し3,000億円に対し、実績2,800億円',
+      '見通し5,000億円に対し、実績1,850億円',
+    ],
+    correctIndex: 1,
+    explanation: '2025年度の成長事業投資は、見通し3,000億円に対して実績は1,850億円でした。未達の主な原因は投資案件の計画遅延等です。',
+  },
+  {
+    id: 359,
+    category: 'company',
+    source: 'kessan2025',
+    text: '「かんでんPay」を共同で提供している会社として正しいものはどれか。',
+    options: [
+      '関西電力とジャックス',
+      '関西電力とアプラス',
+      '関西電力とクレディセゾン',
+      '関西電力とイオンフィナンシャルサービス',
+    ],
+    correctIndex: 1,
+    explanation: 'かんでんPayは関西電力とアプラス（株式会社アプラス）が共同で提供するサービスです。',
+  },
+  {
+    id: 360,
+    category: 'company',
+    source: 'kessan2025',
+    text: '「かんでんPay」で利用するとたまるポイントの名称とその還元率として正しい組み合わせはどれか。',
+    options: [
+      'はびeポイント　0.3%還元',
+      'はびeポイント　0.5%還元',
+      'Pontaポイント　1.0%還元',
+      'はびeポイント　1.0%還元',
+    ],
+    correctIndex: 1,
+    explanation: 'かんでんPayを利用するとはびeポイントが0.5%還元されます。',
+  },
+  {
+    id: 361,
+    category: 'company',
+    source: 'kessan2025',
+    text: '関西電力グループの蓄電所の累計容量として正しいものはどれか（2025年5月時点）。',
+    options: ['約20万kW', '約30万kW', '約41.6万kW', '約60万kW'],
+    correctIndex: 2,
+    explanation: '蓄電所の累計容量は41.6万kWです（紀の川4.8万、札幌10万、多奈川9.9万、水戸5万、浜松3万、阿蘇5万、筑後3.9万kWの合計）。',
+  },
+  {
+    id: 362,
+    category: 'company',
+    source: 'kessan2025',
+    text: '関西電力グループが運営する蓄電所のうち、最も容量が大きい拠点として正しいものはどれか。',
+    options: ['紀の川蓄電所', '多奈川蓄電所', '札幌蓄電所', '阿蘇蓄電所'],
+    correctIndex: 2,
+    explanation: '蓄電所の中で最も容量が大きいのは札幌蓄電所（10万kW）です。続いて多奈川（9.9万kW）、阿蘇・水戸（各5万kW）、紀の川（4.8万kW）、筑後（3.9万kW）、浜松（3万kW）となっています。',
+  },
+  {
+    id: 363,
+    category: 'company',
+    source: 'kessan2025',
+    text: '関西電力グループが運営する蓄電所の拠点数として正しいものはどれか（2025年5月時点）。',
+    options: ['3拠点', '5拠点', '7拠点', '10拠点'],
+    correctIndex: 2,
+    explanation: '蓄電所は紀の川・札幌・多奈川・水戸・浜松・阿蘇・筑後の7拠点です（累計41.6万kW）。',
+  },
+  {
+    id: 364,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2026年度の連結経常利益予想の前年度比として正しいものはどれか（2025年5月時点の予想）。',
+    options: [
+      '前年度比＋500億円の増益予想',
+      '前年度比△500億円の減益予想',
+      '前年度比△2,285億円の大幅減益予想',
+      '前年度比△4,000億円の大幅減益予想',
+    ],
+    correctIndex: 2,
+    explanation: '2026年度の連結経常利益予想は2,900億円で、前年度比△2,285億円の大幅な減益予想です。主な要因は原子力利用率の低下（2025年度84.1%→2026年度予想70%程度）です。',
+  },
+  {
+    id: 365,
+    category: 'company',
+    source: 'kessan2025',
+    text: '2025年度の連結経常利益の前年度比として正しいものはどれか。',
+    options: [
+      '前年度比＋500億円の増益',
+      '前年度比△131億円の減益',
+      '前年度比△1,000億円の大幅減益',
+      '前年度比±0（ほぼ横ばい）',
+    ],
+    correctIndex: 1,
+    explanation: '2025年度の連結経常利益は5,185億円で、前年度比△131億円の小幅な減益でした。原子力利用率が84.1%（前年度88.5%）に低下したことが主因ですが、依然として高い水準を維持しました。',
+  },
+
+  // ==========================================
+  // ① 当社事業 – 経営計画2026（追加）
+  // ==========================================
+
+  {
+    id: 366,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026（2026-2028年度平均）における連結純利益目標として正しいものはどれか。',
+    options: ['1,500億円以上', '2,000億円以上', '2,700億円以上', '3,500億円以上'],
+    correctIndex: 2,
+    explanation: '経営計画2026では連結純利益2,700億円以上（2026-2028年度平均）を財務目標として掲げています。ROE8.0%以上、ROIC3.3%以上、EBITDA8,000億円以上とあわせた財務目標です。',
+  },
+  {
+    id: 367,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026に定める自己資本比率の目標として正しいものはどれか。',
+    options: ['20%台後半', '30%台前半', '30%台半ば', '40%台前半'],
+    correctIndex: 2,
+    explanation: '経営計画2026では自己資本比率の目標を「30%台半ば」と定めています。2025年度末の実績は35.1%で、すでにこの水準を達成しています。',
+  },
+  {
+    id: 368,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026において、2026年度から2028年度（向こう3年間）の株主還元の累計目標として正しいものはどれか。',
+    options: ['1,000億円以上', '1,500億円以上', '2,700億円以上', '5,000億円以上'],
+    correctIndex: 2,
+    explanation: '経営計画2026では「26-28年度累計2,700億円以上」の株主還元を目標としています。連結配当性向25〜35%目安で、配当の維持または増配に努める方針です。',
+  },
+  {
+    id: 369,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026における資本効率の目標指標として採用しているものとして正しい組み合わせはどれか。',
+    options: [
+      'PBRとPER',
+      'ROIC（投下資本利益率）とROE（自己資本利益率）',
+      'EBITDAとEBIT',
+      'フリーキャッシュフローと営業利益率',
+    ],
+    correctIndex: 1,
+    explanation: 'コーポレートガバナンス・ガイドラインに定める資本効率の目標として「ROIC（投下資本利益率）およびROE（自己資本利益率）の目標を設定することで、資本の有効活用を目指す」と明記されています。経営計画2026ではROIC3.3%以上、ROE8.0%以上（2026-2028年度平均）を目標としています。',
+  },
+  {
+    id: 370,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026における「CX（Customer Transformation）」の説明として正しいものはどれか。',
+    options: [
+      '原子力発電の安全性を向上させ、既設炉の稼働率を高める変革',
+      'お客さまとの関係を深化させ、新たな価値を提供するための変革',
+      '海外市場への展開を加速させ、グローバル企業に変革する取り組み',
+      'コンプライアンスを最重要課題として組織文化を変革する取り組み',
+    ],
+    correctIndex: 1,
+    explanation: 'CX（Customer Transformation）はお客さまとの関係を深化させ新たな価値を提供する変革です。EX（Energy Transformation：エネルギーシステムの変革）、BX（Business Transformation：経営効率化）とともにKX（Kansai Electric Power Transformation）を構成する3つの変革の一つです。',
+  },
+  {
+    id: 371,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026において、2040年時点の海外エネルギー事業・情報通信事業・不動産事業の利益規模目標として共通して正しいものはどれか。',
+    options: ['約1.5倍', '約2倍', '約3倍', '約5倍'],
+    correctIndex: 1,
+    explanation: '経営計画2026では、2040年に向けて「海外エネルギー事業・情報通信事業・不動産事業の利益規模を各々約2倍に拡大」することを目標として掲げています。',
+  },
+  {
+    id: 372,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026に記載されているHSDC（ハイパースケールデータセンター）に関する説明として正しいものはどれか。',
+    options: [
+      '大規模データセンターに安定的に電力を供給し、AI・デジタル需要を取り込む新たな事業領域',
+      '家庭向けのスマートメーターを全戸に普及させるプロジェクト',
+      '小規模分散型の発電設備を住宅に設置するサービス',
+      '海底ケーブルを用いた国際通信事業',
+    ],
+    correctIndex: 0,
+    explanation: 'HSDCはHyper Scale Data Centerの略で、大規模データセンターに対して安定的に電力を供給し、急増するAI・デジタル需要を取り込む新たな事業領域です。経営計画2026では2035年までに達成する目標を掲げています。',
+  },
+  {
+    id: 373,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026で示された関西電力グループのGHG排出量削減目標のうち、2030年度の目標（2013年度比）として正しいものはどれか。',
+    options: ['20%削減', '40%削減', '60%削減', '80%削減'],
+    correctIndex: 2,
+    explanation: '経営計画2026では2030年度にGHG排出量（Scope1、2）を2013年度比60%削減することを目標としています。また2040年には80%削減、2050年にはゼロカーボン実現を目指しています。',
+  },
+  {
+    id: 374,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026に示された2025年度時点の関西電力グループの原子力発電の基数と最大出力として正しいものはどれか。',
+    options: [
+      '5基、約400万kW',
+      '7基、約700万kW',
+      '10基、約1,000万kW',
+      '3基、約350万kW',
+    ],
+    correctIndex: 1,
+    explanation: '関西電力グループは7基の原子力発電所を最大活用しています（最大出力約700万kW）。2025年度の原子力利用率は84.1%でした。既設炉の最大活用がゼロカーボンと安定供給・コスト競争力の両立に不可欠とされています。',
+  },
+  {
+    id: 375,
+    category: 'company',
+    source: 'keiei2026',
+    text: '経営計画2026に記載されている「SenaSon（セナソン）」の説明として正しいものはどれか。',
+    options: [
+      '関西電力グループが開発した家庭向け蓄電池サービスのブランド名',
+      '法人向けの分散型エネルギーリソース最適制御サービス',
+      '関西電力の電力小売プランのブランド名',
+      'AIを活用した電力需給予測システム',
+    ],
+    correctIndex: 1,
+    explanation: 'SenaSon（セナソン）は法人向けの分散型エネルギーリソース（太陽光・蓄電池・EVなど）を最適制御するサービスです。お客さまの省エネ・コスト削減と電力系統の安定化を同時に実現します。',
   },
 
 ];
