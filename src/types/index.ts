@@ -16,6 +16,7 @@ export const SOURCE_LABELS: Record<string, string> = {
   kessan2025: '2025年度決算説明資料',
   zerocarbon_vision: 'ゼロカーボンビジョン2050',
   zerocarbon_roadmap: 'ゼロカーボンロードマップ',
+  conduct: '関西電力グループ行動憲章',
 };
 
 export type QuizMode = 'practice' | 'exam';
