@@ -39,9 +39,8 @@ export function useQuiz() {
   const [filterCategory, setFilterCategory] = useState<Category | 'all'>('all');
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [answers, setAnswers] = useState<AnswerRecord[]>([]);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [showExplanation, setShowExplanation] = useState(false);
+  // answers keyed by question index so back-navigation works correctly
+  const [answersMap, setAnswersMap] = useState<Record<number, AnswerRecord>>({});
 
   const startPractice = useCallback((category: Category | 'all') => {
     const pool =
@@ -52,9 +51,7 @@ export function useQuiz() {
     setMode('practice');
     setFilterCategory(category);
     setCurrentIndex(0);
-    setAnswers([]);
-    setSelectedIndex(null);
-    setShowExplanation(false);
+    setAnswersMap({});
     setState('answering');
   }, []);
 
@@ -64,9 +61,7 @@ export function useQuiz() {
     setMode('practice');
     setFilterCategory('company');
     setCurrentIndex(0);
-    setAnswers([]);
-    setSelectedIndex(null);
-    setShowExplanation(false);
+    setAnswersMap({});
     setState('answering');
   }, []);
 
@@ -76,26 +71,23 @@ export function useQuiz() {
     setMode('exam');
     setFilterCategory('all');
     setCurrentIndex(0);
-    setAnswers([]);
-    setSelectedIndex(null);
-    setShowExplanation(false);
+    setAnswersMap({});
     setState('answering');
   }, []);
 
   const selectOption = useCallback(
     (index: number) => {
-      if (selectedIndex !== null) return;
-      setSelectedIndex(index);
+      // practice: no re-answering once answered; exam: re-selection allowed
+      if (mode === 'practice' && currentIndex in answersMap) return;
       const q = questions[currentIndex];
       const record: AnswerRecord = {
         questionId: q.id,
         selectedIndex: index,
         isCorrect: index === q.correctIndex,
       };
-      setAnswers((prev) => [...prev, record]);
-      if (mode === 'practice') setShowExplanation(true);
+      setAnswersMap((prev) => ({ ...prev, [currentIndex]: record }));
     },
-    [selectedIndex, questions, currentIndex, mode]
+    [answersMap, questions, currentIndex, mode]
   );
 
   const next = useCallback(() => {
@@ -103,10 +95,14 @@ export function useQuiz() {
       setState('finished');
     } else {
       setCurrentIndex((i) => i + 1);
-      setSelectedIndex(null);
-      setShowExplanation(false);
     }
   }, [currentIndex, questions.length]);
+
+  const prev = useCallback(() => {
+    if (currentIndex > 0) {
+      setCurrentIndex((i) => i - 1);
+    }
+  }, [currentIndex]);
 
   const submitExam = useCallback(() => {
     setState('finished');
@@ -115,13 +111,16 @@ export function useQuiz() {
   const restart = useCallback(() => {
     setState('idle');
     setQuestions([]);
-    setAnswers([]);
-    setSelectedIndex(null);
-    setShowExplanation(false);
+    setAnswersMap({});
     setCurrentIndex(0);
   }, []);
 
-  const score = answers.filter((a) => a.isCorrect).length;
+  // Derived state — changes automatically when currentIndex changes
+  const selectedIndex = answersMap[currentIndex]?.selectedIndex ?? null;
+  const showExplanation = currentIndex in answersMap && mode === 'practice';
+  // Ordered array for ResultPage (questions with no answer are excluded)
+  const answers = questions.map((_, i) => answersMap[i]).filter(Boolean) as AnswerRecord[];
+  const score = Object.values(answersMap).filter((a) => a.isCorrect).length;
   const currentQuestion = questions[currentIndex] ?? null;
 
   return {
@@ -140,6 +139,7 @@ export function useQuiz() {
     startExam,
     selectOption,
     next,
+    prev,
     submitExam,
     restart,
   };

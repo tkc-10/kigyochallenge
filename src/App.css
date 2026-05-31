@@ -255,7 +255,8 @@
 .exp-wrong .exp-icon { color: var(--wrong); }
 
 .btn-next {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   padding: 14px;
   background: var(--primary);
   color: #fff;
@@ -267,6 +268,25 @@
   transition: background 0.15s;
 }
 .btn-next:hover { background: var(--primary-dark); }
+.btn-prev {
+  flex-shrink: 0;
+  padding: 14px 16px;
+  background: var(--surface);
+  color: var(--text-sub);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.btn-prev:hover { background: var(--bg); }
+.quiz-nav {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
 .exam-nav { margin-top: 8px; }
 
 /* ===== Result Page ===== */

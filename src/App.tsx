@@ -28,6 +28,7 @@ export default function App() {
         showExplanation={quiz.showExplanation}
         onSelect={quiz.selectOption}
         onNext={quiz.next}
+        onPrev={quiz.prev}
         onSubmitExam={quiz.submitExam}
         onAbort={quiz.restart}
       />

@@ -21,6 +21,7 @@ interface Props {
   showExplanation: boolean;
   onSelect: (index: number) => void;
   onNext: () => void;
+  onPrev: () => void;
   onSubmitExam: () => void;
   onAbort: () => void;
 }
@@ -34,11 +35,13 @@ export default function QuizPage({
   showExplanation,
   onSelect,
   onNext,
+  onPrev,
   onSubmitExam,
   onAbort,
 }: Props) {
   const isAnswered = selectedIndex !== null;
   const isLast = questionNumber === totalQuestions;
+  const isFirst = questionNumber === 1;
 
   return (
     <div className="quiz-page">
@@ -79,7 +82,7 @@ export default function QuizPage({
                 <button
                   className={cls}
                   onClick={() => onSelect(i)}
-                  disabled={isAnswered}
+                  disabled={isAnswered && mode === 'practice'}
                 >
                   <span className="option-letter">
                     {String.fromCharCode(65 + i)}
@@ -101,21 +104,23 @@ export default function QuizPage({
         </div>
       )}
 
-      {isAnswered && mode === 'practice' && (
-        <button className="btn-next" onClick={isLast ? onSubmitExam : onNext}>
-          {isLast ? '結果を見る' : '次の問題 →'}
-        </button>
-      )}
-
-      {mode === 'exam' && (
-        <div className="exam-nav">
-          {isAnswered && (
-            <button className="btn-next" onClick={isLast ? onSubmitExam : onNext}>
-              {isLast ? '採点する' : '次の問題 →'}
-            </button>
-          )}
-        </div>
-      )}
+      <div className="quiz-nav">
+        {!isFirst && (
+          <button className="btn-prev" onClick={onPrev}>
+            ← 前の問題
+          </button>
+        )}
+        {mode === 'practice' && isAnswered && (
+          <button className="btn-next" onClick={isLast ? onSubmitExam : onNext}>
+            {isLast ? '結果を見る' : '次の問題 →'}
+          </button>
+        )}
+        {mode === 'exam' && isAnswered && (
+          <button className="btn-next" onClick={isLast ? onSubmitExam : onNext}>
+            {isLast ? '採点する' : '次の問題 →'}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
