@@ -21,8 +21,11 @@ const SOURCE_COLORS: Record<string, string> = {
   keiei2026: '#0ea5e9',
   kessan2025: '#059669',
   zerocarbon_vision: '#10b981',
-  zerocarbon_roadmap: '#6ee7b7',
+  zerocarbon_roadmap: '#0d9488',
+  conduct: '#dc2626',
 };
+
+const SOURCE_ORDER = ['governance', 'keiei2026', 'kessan2025', 'zerocarbon_vision', 'zerocarbon_roadmap', 'conduct'];
 
 const examReady =
   allQuestions.filter((q) => q.category === 'company').length >= 30 &&
@@ -37,12 +40,10 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
   };
 
   const sourceCounts = getSourceCounts();
+  const frequentCount = sourceCounts['frequent'] ?? 0;
   const availableSources = Object.entries(sourceCounts)
-    .filter(([, count]) => count >= 5)
-    .sort((a, b) => {
-      const order = ['governance', 'keiei2026', 'kessan2025', 'zerocarbon_vision', 'zerocarbon_roadmap'];
-      return order.indexOf(a[0]) - order.indexOf(b[0]);
-    });
+    .filter(([source, count]) => count >= 5 && source !== 'frequent')
+    .sort((a, b) => SOURCE_ORDER.indexOf(a[0]) - SOURCE_ORDER.indexOf(b[0]));
 
   return (
     <div className="home">
@@ -95,6 +96,22 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
               </button>
             ))}
           </div>
+        </section>
+      )}
+
+      {frequentCount > 0 && (
+        <section className="section section-frequent">
+          <div className="frequent-badge">過去11年分の出題傾向分析</div>
+          <h2 className="section-title">頻出問題テスト</h2>
+          <p className="section-desc">
+            複数年度で繰り返し出題された定番テーマを網羅。当社事業・社会経済・ビジネス知識の頻出問題を効率的に対策できます。
+          </p>
+          <button
+            className="btn-frequent"
+            onClick={() => onStartPracticeBySource('frequent')}
+          >
+            頻出問題テスト開始（{frequentCount}問）
+          </button>
         </section>
       )}
 
