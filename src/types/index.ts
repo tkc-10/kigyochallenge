@@ -17,6 +17,7 @@ export const SOURCE_LABELS: Record<string, string> = {
   zerocarbon_vision: 'ゼロカーボンビジョン2050',
   zerocarbon_roadmap: 'ゼロカーボンロードマップ',
   conduct: '関西電力グループ行動憲章',
+  report2025: '統合報告書2025',
 };
 
 export type QuizMode = 'practice' | 'exam';

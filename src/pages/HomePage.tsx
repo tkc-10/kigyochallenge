@@ -23,9 +23,10 @@ const SOURCE_COLORS: Record<string, string> = {
   zerocarbon_vision: '#10b981',
   zerocarbon_roadmap: '#0d9488',
   conduct: '#dc2626',
+  report2025: '#e11d48',
 };
 
-const SOURCE_ORDER = ['governance', 'keiei2026', 'kessan2025', 'zerocarbon_vision', 'zerocarbon_roadmap', 'conduct'];
+const SOURCE_ORDER = ['report2025', 'keiei2026', 'kessan2025', 'governance', 'conduct', 'zerocarbon_vision', 'zerocarbon_roadmap'];
 
 const examReady =
   allQuestions.filter((q) => q.category === 'company').length >= 30 &&
