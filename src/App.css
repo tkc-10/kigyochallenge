@@ -142,6 +142,55 @@
 }
 .source-link:active { transform: translateY(0); }
 
+/* ===== 出典・参考資料 ===== */
+.ref-group {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.ref-summary {
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ref-summary::-webkit-details-marker { display: none; }
+.ref-summary::before {
+  content: '▶';
+  font-size: 10px;
+  color: var(--text-sub);
+  transition: transform 0.15s;
+}
+.ref-group[open] .ref-summary::before { transform: rotate(90deg); }
+.ref-summary:hover { background: var(--bg); }
+.ref-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 16px 12px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ref-list a {
+  color: var(--primary);
+  font-size: 13px;
+  line-height: 1.5;
+  text-decoration: none;
+  word-break: break-word;
+}
+.ref-list a:hover { text-decoration: underline; }
+.ref-list a::after {
+  content: ' ↗';
+  font-size: 11px;
+  color: var(--text-sub);
+}
+
 .exam-counts {
   display: flex;
   gap: 16px;

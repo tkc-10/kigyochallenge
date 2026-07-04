@@ -28,6 +28,53 @@ const SOURCE_COLORS: Record<string, string> = {
 
 const SOURCE_ORDER = ['report2025', 'keiei2026', 'kessan2025', 'governance', 'conduct', 'zerocarbon_vision', 'zerocarbon_roadmap'];
 
+// 関西電力公式サイト内の出典・参考資料（テーマ別）
+const REFERENCE_GROUPS: { title: string; items: { label: string; url: string }[] }[] = [
+  {
+    title: '① 当社事業（経営・IR・ガバナンス）',
+    items: [
+      { label: '経営計画2026', url: 'https://www.kepco.co.jp/corporate/policy/pdf/plan_2026.pdf' },
+      { label: '統合報告書2025', url: 'https://www.kepco.co.jp/corporate/report/integrated/' },
+      { label: '2025年度 決算説明資料', url: 'https://www.kepco.co.jp/ir/brief/earnings/2026/pdf/pdf2026_04_05.pdf' },
+      { label: '決算・IR関連資料（一覧）', url: 'https://www.kepco.co.jp/ir/brief/index.html' },
+      { label: 'コーポレートガバナンス・ガイドライン', url: 'https://www.kepco.co.jp/ir/policy/governance/images/pdf/corporate_governance_guideline.pdf' },
+    ],
+  },
+  {
+    title: '経営理念・行動憲章',
+    items: [
+      { label: '関西電力グループ行動憲章', url: 'https://www.kepco.co.jp/corporate/policy/charter/index.html' },
+      { label: '経営理念（Purpose & Values）', url: 'https://www.kepco.co.jp/corporate/policy/philosophy/index.html' },
+      { label: '関西電力グループ安全行動憲章', url: 'https://www.kepco.co.jp/energy_supply/supply/ichiisenshin/philosophy/chikai.html' },
+    ],
+  },
+  {
+    title: '環境・ゼロカーボン',
+    items: [
+      { label: 'ゼロカーボンビジョン2050', url: 'https://www.kepco.co.jp/sustainability/environment/zerocarbon/index.html' },
+      { label: 'ゼロカーボンロードマップ', url: 'https://www.kepco.co.jp/sustainability/environment/zerocarbon/roadmap.html' },
+      { label: 'ゼロカーボンロードマップ 改定（2024/4/30）', url: 'https://www.kepco.co.jp/corporate/pr/2024/pdf/20240430_6j.pdf' },
+      { label: 'サステナビリティ方針', url: 'https://www.kepco.co.jp/sustainability/policy/index.html' },
+    ],
+  },
+  {
+    title: '原子力（頻出テーマ）',
+    items: [
+      { label: '原子力ライブラリ（用語・仕組み）', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/library/' },
+      { label: "What's 原子力発電｜燃料のリサイクル", url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/whats/cycle.html' },
+      { label: '関西電力の原子力関連施設', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/shisetsu/index.html' },
+      { label: '原子力発電の安全性向上に向けた取組み', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/anzenkakuho/haishi_collaboration.html' },
+      { label: '再処理（燃料の再処理）', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/library/9994322_13857.html' },
+      { label: '中間貯蔵について（FAQ）', url: 'https://www.kepco.co.jp/siteinfo/faq/atomic/9997844_10620.html' },
+      { label: '乾式貯蔵施設とは', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/whats/kanshiki.html' },
+      { label: '原子力発電所の運転状況（リアルタイム）', url: 'https://www.kepco.co.jp/energy_supply/energy/nuclear_power/info/monitor/live_unten/index.html' },
+      { label: '美浜発電所', url: 'https://www.kepco.co.jp/corporate/profile/community/mihama/index.html' },
+      { label: '高浜発電所', url: 'https://www.kepco.co.jp/corporate/profile/community/takahama/index.html' },
+      { label: '大飯発電所', url: 'https://www.kepco.co.jp/corporate/profile/community/ooi/index.html' },
+    ],
+  },
+];
+
 const examReady =
   allQuestions.filter((q) => q.category === 'company').length >= 30 &&
   allQuestions.filter((q) => q.category === 'society').length >= 30 &&
@@ -150,6 +197,27 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
         >
           {examReady ? '本番シミュレーション開始' : '問題数が不足（準備中）'}
         </button>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">出典・参考資料</h2>
+        <p className="section-desc">
+          問題は関西電力公式サイト（kepco.co.jp）内の公開情報を出典としています。原典はこちらから確認できます。
+        </p>
+        {REFERENCE_GROUPS.map((group) => (
+          <details key={group.title} className="ref-group">
+            <summary className="ref-summary">{group.title}</summary>
+            <ul className="ref-list">
+              {group.items.map((item) => (
+                <li key={item.url}>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
       </section>
     </div>
   );
