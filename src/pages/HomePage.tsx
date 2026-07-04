@@ -1,5 +1,5 @@
 import type { Category } from '../types';
-import { SOURCE_LABELS } from '../types';
+import { SOURCE_LABELS, SOURCE_URLS } from '../types';
 import { getSourceCounts } from '../hooks/useQuiz';
 import allQuestions from '../data/questions';
 
@@ -86,15 +86,31 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
           <p className="section-desc">添付資料ごとの問題を重点練習できます。</p>
           <div className="source-grid">
             {availableSources.map(([source, count]) => (
-              <button
+              <div
                 key={source}
-                className="source-card"
+                className="source-row"
                 style={{ '--accent': SOURCE_COLORS[source] ?? '#6366f1' } as React.CSSProperties}
-                onClick={() => onStartPracticeBySource(source)}
               >
-                <span className="source-label">{SOURCE_LABELS[source] ?? source}</span>
-                <span className="source-count">{count}問</span>
-              </button>
+                <button
+                  className="source-card"
+                  onClick={() => onStartPracticeBySource(source)}
+                >
+                  <span className="source-label">{SOURCE_LABELS[source] ?? source}</span>
+                  <span className="source-count">{count}問</span>
+                </button>
+                {SOURCE_URLS[source] && (
+                  <a
+                    className="source-link"
+                    href={SOURCE_URLS[source]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="原典（公式資料）を開く"
+                    aria-label={`${SOURCE_LABELS[source] ?? source}の資料を開く`}
+                  >
+                    📄 資料
+                  </a>
+                )}
+              </div>
             ))}
           </div>
         </section>

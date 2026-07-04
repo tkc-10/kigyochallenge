@@ -90,7 +90,14 @@
   flex-direction: column;
   gap: 8px;
 }
+.source-row {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
 .source-card {
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -112,6 +119,28 @@
 .source-card:active { transform: translateY(0); }
 .source-label { flex: 1; font-size: 12px; line-height: 1.4; }
 .source-count { font-size: 18px; font-weight: 700; flex-shrink: 0; margin-left: 12px; }
+.source-link {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border: 2px solid var(--accent, #7c3aed);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--accent, #7c3aed);
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, transform 0.1s;
+}
+.source-link:hover {
+  background: color-mix(in srgb, var(--accent, #7c3aed) 12%, white);
+  transform: translateY(-1px);
+}
+.source-link:active { transform: translateY(0); }
 
 .exam-counts {
   display: flex;
