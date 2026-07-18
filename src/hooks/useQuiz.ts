@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import type { Question, AnswerRecord, QuizMode, Category } from '../types';
 import allQuestions from '../data/questions';
+import { FRAMEWORK_PAGES } from '../data/frameworks';
 
 export function getSourceCounts(): Record<string, number> {
   const counts: Record<string, number> = {};
@@ -31,7 +32,7 @@ function pickExamQuestions(): Question[] {
   ]);
 }
 
-export type QuizState = 'idle' | 'answering' | 'reviewing' | 'finished';
+export type QuizState = 'idle' | 'answering' | 'reviewing' | 'finished' | 'explaining';
 
 export function useQuiz() {
   const [state, setState] = useState<QuizState>('idle');
@@ -41,6 +42,8 @@ export function useQuiz() {
   const [currentIndex, setCurrentIndex] = useState(0);
   // answers keyed by question index so back-navigation works correctly
   const [answersMap, setAnswersMap] = useState<Record<number, AnswerRecord>>({});
+  // 解説モード（フレームワーク説明）のページ番号
+  const [explainIndex, setExplainIndex] = useState(0);
 
   const startPractice = useCallback((category: Category | 'all') => {
     const pool =
@@ -108,11 +111,25 @@ export function useQuiz() {
     setState('finished');
   }, []);
 
+  const startExplain = useCallback(() => {
+    setExplainIndex(0);
+    setState('explaining');
+  }, []);
+
+  const explainNext = useCallback(() => {
+    setExplainIndex((i) => Math.min(i + 1, FRAMEWORK_PAGES.length - 1));
+  }, []);
+
+  const explainPrev = useCallback(() => {
+    setExplainIndex((i) => Math.max(i - 1, 0));
+  }, []);
+
   const restart = useCallback(() => {
     setState('idle');
     setQuestions([]);
     setAnswersMap({});
     setCurrentIndex(0);
+    setExplainIndex(0);
   }, []);
 
   // Derived state — changes automatically when currentIndex changes
@@ -134,9 +151,13 @@ export function useQuiz() {
     selectedIndex,
     showExplanation,
     score,
+    explainIndex,
     startPractice,
     startPracticeBySource,
     startExam,
+    startExplain,
+    explainNext,
+    explainPrev,
     selectOption,
     next,
     prev,

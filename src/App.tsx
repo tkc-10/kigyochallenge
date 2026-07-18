@@ -2,6 +2,7 @@ import { useQuiz } from './hooks/useQuiz';
 import HomePage from './pages/HomePage';
 import QuizPage from './pages/QuizPage';
 import ResultPage from './pages/ResultPage';
+import ExplainPage from './pages/ExplainPage';
 import './App.css';
 
 export default function App() {
@@ -13,6 +14,18 @@ export default function App() {
         onStartPractice={quiz.startPractice}
         onStartPracticeBySource={quiz.startPracticeBySource}
         onStartExam={quiz.startExam}
+        onStartExplain={quiz.startExplain}
+      />
+    );
+  }
+
+  if (quiz.state === 'explaining') {
+    return (
+      <ExplainPage
+        index={quiz.explainIndex}
+        onNext={quiz.explainNext}
+        onPrev={quiz.explainPrev}
+        onExit={quiz.restart}
       />
     );
   }

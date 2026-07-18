@@ -7,6 +7,7 @@ interface Props {
   onStartPractice: (category: Category | 'all') => void;
   onStartPracticeBySource: (source: string) => void;
   onStartExam: () => void;
+  onStartExplain: () => void;
 }
 
 const CATEGORIES: { value: Category | 'all'; label: string; color: string }[] = [
@@ -80,7 +81,7 @@ const examReady =
   allQuestions.filter((q) => q.category === 'society').length >= 30 &&
   allQuestions.filter((q) => q.category === 'business').length >= 20;
 
-export default function HomePage({ onStartPractice, onStartPracticeBySource, onStartExam }: Props) {
+export default function HomePage({ onStartPractice, onStartPracticeBySource, onStartExam, onStartExplain }: Props) {
   const counts = {
     company: allQuestions.filter((q) => q.category === 'company').length,
     society: allQuestions.filter((q) => q.category === 'society').length,
@@ -89,8 +90,11 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
 
   const sourceCounts = getSourceCounts();
   const frequentCount = sourceCounts['frequent'] ?? 0;
+  const frameworkCount = sourceCounts['mkt_framework'] ?? 0;
+  // 専用セクションを持つ source は資料別練習グリッドから除外する
+  const excludedFromGrid = ['frequent', 'mkt_framework'];
   const availableSources = Object.entries(sourceCounts)
-    .filter(([source, count]) => count >= 5 && source !== 'frequent')
+    .filter(([source, count]) => count >= 5 && !excludedFromGrid.includes(source))
     .sort((a, b) => SOURCE_ORDER.indexOf(a[0]) - SOURCE_ORDER.indexOf(b[0]));
 
   return (
@@ -176,6 +180,27 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
           >
             頻出問題テスト開始（{frequentCount}問）
           </button>
+        </section>
+      )}
+
+      {frameworkCount > 0 && (
+        <section className="section section-framework">
+          <div className="framework-badge">③ ビジネス知識 特化</div>
+          <h2 className="section-title">マーケティング・経営戦略フレームワーク</h2>
+          <p className="section-desc">
+            3C・PEST・SWOT・4P・5フォース・PPM・アンゾフなど、試験頻出のフレームワークを解説で学び、正誤問題で確認できます。
+          </p>
+          <div className="framework-btns">
+            <button className="btn-framework btn-framework-explain" onClick={onStartExplain}>
+              📖 解説で学ぶ
+            </button>
+            <button
+              className="btn-framework btn-framework-quiz"
+              onClick={() => onStartPracticeBySource('mkt_framework')}
+            >
+              ✍️ 問題を解く（{frameworkCount}問）
+            </button>
+          </div>
         </section>
       )}
 

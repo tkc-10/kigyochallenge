@@ -191,6 +191,91 @@
   color: var(--text-sub);
 }
 
+/* ===== フレームワーク特化セクション ===== */
+.section-framework {
+  border: 2px solid #8b5cf6;
+  background: linear-gradient(135deg, #f5f3ff, #fff);
+}
+.framework-badge {
+  display: inline-block;
+  background: #8b5cf6;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.framework-btns {
+  display: flex;
+  gap: 8px;
+}
+.btn-framework {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn-framework-explain { background: #8b5cf6; }
+.btn-framework-quiz { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+.btn-framework:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn-framework:active { transform: translateY(0); }
+
+/* ===== 解説（フレームワーク説明）ページ ===== */
+.explain-chapter {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8b5cf6;
+  margin: 0 0 6px;
+}
+.explain-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--text);
+}
+.explain-summary {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 14px;
+  color: var(--text);
+}
+.explain-points {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.explain-points li {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-sub);
+}
+.explain-caution {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.explain-caution-icon {
+  display: block;
+  font-weight: 700;
+  color: #d97706;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+.explain-caution p { margin: 0; color: var(--text); }
+
 .exam-counts {
   display: flex;
   gap: 16px;
