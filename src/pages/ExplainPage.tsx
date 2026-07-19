@@ -1,4 +1,5 @@
 import { FRAMEWORK_PAGES } from '../data/frameworks';
+import FrameworkDiagram from '../components/FrameworkDiagram';
 
 interface Props {
   index: number;
@@ -37,6 +38,12 @@ export default function ExplainPage({ index, onNext, onPrev, onExit }: Props) {
       <div className="question-card">
         <p className="explain-chapter">{page.chapter}</p>
         <h2 className="explain-title">{page.title}</h2>
+        {page.diagram && (
+          <div className="explain-diagram">
+            <FrameworkDiagram id={page.diagram} />
+          </div>
+        )}
+
         <p className="explain-summary">{page.summary}</p>
 
         {page.points.length > 0 && (

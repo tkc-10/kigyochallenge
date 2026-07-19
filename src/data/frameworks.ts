@@ -7,6 +7,7 @@ export interface FrameworkPage {
   summary: string; // 定義・概要
   points: string[]; // 補足ポイント
   caution?: string; // ひっかけ注意
+  diagram?: string; // 図解ID（FrameworkDiagram に対応）
 }
 
 export const FRAMEWORK_PAGES: FrameworkPage[] = [
@@ -21,6 +22,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       '「自社・買い手・競合」の3要素で構成されるのは3C分析。PESTとの混同に注意。',
+    diagram: 'pest',
   },
   {
     chapter: '1. 外部環境分析',
@@ -32,6 +34,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
       'PESTがマクロ環境なのに対し、5フォースは業界内部の構造を分析する。',
     ],
     caution: '「4つの力」ではなく5つ。売り手と買い手の交渉力を取り違えないこと。',
+    diagram: 'fiveforces',
   },
   {
     chapter: '1. 外部環境分析',
@@ -44,6 +47,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       '「売り手・買い手・競合他社」ではない。Customerは単なる「買い手」ではなく市場全体を含む顧客視点。',
+    diagram: '3c',
   },
   {
     chapter: '2. 内部環境・自社分析',
@@ -65,6 +69,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: ['どの活動がどの部門・機能に分類されるかを問う問題が出やすい。'],
     caution:
       '「市場成長率とシェアで事業を分類する」のはPPM（BCGマトリクス）。バリューチェーンとは別物。',
+    diagram: 'valuechain',
   },
   {
     chapter: '3. 統合分析',
@@ -76,6 +81,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       '強み・弱み＝内部要因、機会・脅威＝外部要因。この対応を逆にする誤りがよく出題される。',
+    diagram: 'swot',
   },
   {
     chapter: '4. 市場・顧客戦略',
@@ -85,6 +91,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: ['4Pを実行する前段階として位置づけられる。'],
     caution:
       'Targeting（標的選定）とPositioning（立ち位置明確化）の役割を入れ替える誤りに注意。',
+    diagram: 'stp',
   },
   {
     chapter: '4. 市場・顧客戦略',
@@ -96,6 +103,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
       '対応する顧客視点の枠組みとして4C（Customer Value・Cost・Convenience・Communication）がある。',
     ],
     caution: '4つ目の頭文字は「Place」（流通）であり「Positioning」ではない。',
+    diagram: '4p',
   },
   {
     chapter: '4. 市場・顧客戦略',
@@ -107,6 +115,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       'AISASはインターネット普及を前提としたモデル。「インターネット普及以前のモデル」とする説明は誤り。',
+    diagram: 'purchaseflow',
   },
   {
     chapter: '5. 成長・事業戦略',
@@ -118,6 +127,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       '「新市場×既存製品」は新市場開拓であり、市場浸透ではない。組合せの取り違えが頻出。',
+    diagram: 'ansoff',
   },
   {
     chapter: '5. 成長・事業戦略',
@@ -131,6 +141,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
       '負け犬＝成長率低・シェア低（撤退を検討）。',
     ],
     caution: '「成長率高・シェア低」は問題児であり負け犬ではない。象限の取り違えに注意。',
+    diagram: 'ppm',
   },
   {
     chapter: '5. 成長・事業戦略',
@@ -140,6 +151,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: ['集中戦略は業界全体ではなく特定のセグメントに経営資源を集中する戦略。'],
     caution:
       '「集中戦略＝業界全体を対象に幅広くアプローチする」は誤り。特定セグメントへの集中が正しい。',
+    diagram: 'porter',
   },
   {
     chapter: '5. 成長・事業戦略',
@@ -169,6 +181,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: [],
     caution:
       '採用が最も遅い層は「ラガード」。「アーリーマジョリティ」を最遅層とする誤りに注意。',
+    diagram: 'innovator',
   },
   {
     chapter: '6. イノベーション関連',
@@ -178,6 +191,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: [],
     caution:
       'キャズムは「イノベーターとアーリーアダプターの間」ではなく「アーリーアダプターとアーリーマジョリティの間」。',
+    diagram: 'chasm',
   },
   {
     chapter: '6. イノベーション関連',
@@ -195,6 +209,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     points: ['OODAは変化の速い状況での迅速な意思決定に向く。'],
     caution:
       'PDCAは「計画」起点、OODAは「観察」起点。この起点を入れ替える誤りに注意。',
+    diagram: 'cycle',
   },
   {
     chapter: '7. 目標管理・実行管理',
@@ -212,6 +227,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
       '財務の視点・顧客の視点・業務プロセスの視点・学習と成長の視点という4つの視点で戦略を管理する手法。',
     points: ['財務指標だけでなく非財務指標も含めてバランスよく評価する点が特徴。'],
     caution: '「財務指標のみで評価する手法」は誤り。4つの視点をバランスさせる点がポイント。',
+    diagram: 'bsc',
   },
   {
     chapter: '8. 応用マーケティング',
@@ -226,6 +242,7 @@ export const FRAMEWORK_PAGES: FrameworkPage[] = [
     ],
     caution:
       '「模倣戦略」はフォロワーの特徴。チャレンジャーの戦略と取り違えないこと。',
+    diagram: 'positions',
   },
   {
     chapter: '8. 応用マーケティング',

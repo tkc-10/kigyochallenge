@@ -276,6 +276,28 @@
 }
 .explain-caution p { margin: 0; color: var(--text); }
 
+.explain-diagram {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 0 0 16px;
+}
+.fw-diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.fw-cycle-pair {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.fw-cycle-pair .fw-diagram { max-width: 200px; }
+
 .exam-counts {
   display: flex;
   gap: 16px;
