@@ -4,12 +4,14 @@ const CATEGORY_LABEL: Record<string, string> = {
   company: '① 当社事業',
   society: '② 社会・経済',
   business: '③ ビジネス知識',
+  current: '時事',
 };
 
 const CATEGORY_COLOR: Record<string, string> = {
   company: '#0ea5e9',
   society: '#10b981',
   business: '#f59e0b',
+  current: '#ef4444',
 };
 
 interface Props {

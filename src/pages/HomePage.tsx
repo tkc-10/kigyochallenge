@@ -91,8 +91,9 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
   const sourceCounts = getSourceCounts();
   const frequentCount = sourceCounts['frequent'] ?? 0;
   const frameworkCount = sourceCounts['mkt_framework'] ?? 0;
+  const jijiCount = sourceCounts['jiji2026'] ?? 0;
   // 専用セクションを持つ source は資料別練習グリッドから除外する
-  const excludedFromGrid = ['frequent', 'mkt_framework'];
+  const excludedFromGrid = ['frequent', 'mkt_framework', 'jiji2026'];
   const availableSources = Object.entries(sourceCounts)
     .filter(([source, count]) => count >= 5 && !excludedFromGrid.includes(source))
     .sort((a, b) => SOURCE_ORDER.indexOf(a[0]) - SOURCE_ORDER.indexOf(b[0]));
@@ -113,7 +114,7 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
             const count =
               cat.value === 'all'
                 ? allQuestions.length
-                : counts[cat.value as Category];
+                : counts[cat.value as 'company' | 'society' | 'business'];
             const preparing = count === 0;
             return (
               <button
@@ -201,6 +202,22 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
               ✍️ 問題を解く（{frameworkCount}問）
             </button>
           </div>
+        </section>
+      )}
+
+      {jijiCount > 0 && (
+        <section className="section section-jiji">
+          <div className="jiji-badge">2026年 最新時事</div>
+          <h2 className="section-title">2026年最新時事問題</h2>
+          <p className="section-desc">
+            2026年1〜6月の重要ニュース（政治・経済・国際・社会・科学など）を中心とした学習用の予想問題です。4択・解説つき。
+          </p>
+          <button
+            className="btn-jiji"
+            onClick={() => onStartPracticeBySource('jiji2026')}
+          >
+            📰 時事問題を解く（{jijiCount}問）
+          </button>
         </section>
       )}
 
