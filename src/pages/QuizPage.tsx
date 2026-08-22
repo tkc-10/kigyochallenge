@@ -5,6 +5,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   society: '② 社会・経済',
   business: '③ ビジネス知識',
   current: '時事',
+  popbudget: '人口・財政',
 };
 
 const CATEGORY_COLOR: Record<string, string> = {
@@ -12,6 +13,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   society: '#10b981',
   business: '#f59e0b',
   current: '#ef4444',
+  popbudget: '#0891b2',
 };
 
 interface Props {

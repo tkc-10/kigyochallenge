@@ -1,4 +1,4 @@
-export type Category = 'company' | 'society' | 'business' | 'current';
+export type Category = 'company' | 'society' | 'business' | 'current' | 'popbudget';
 
 export interface Question {
   id: number;

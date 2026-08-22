@@ -92,8 +92,9 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
   const frequentCount = sourceCounts['frequent'] ?? 0;
   const frameworkCount = sourceCounts['mkt_framework'] ?? 0;
   const jijiCount = sourceCounts['jiji2026'] ?? 0;
+  const popBudgetCount = sourceCounts['pop_budget'] ?? 0;
   // 専用セクションを持つ source は資料別練習グリッドから除外する
-  const excludedFromGrid = ['frequent', 'mkt_framework', 'jiji2026'];
+  const excludedFromGrid = ['frequent', 'mkt_framework', 'jiji2026', 'pop_budget'];
   const availableSources = Object.entries(sourceCounts)
     .filter(([source, count]) => count >= 5 && !excludedFromGrid.includes(source))
     .sort((a, b) => SOURCE_ORDER.indexOf(a[0]) - SOURCE_ORDER.indexOf(b[0]));
@@ -217,6 +218,22 @@ export default function HomePage({ onStartPractice, onStartPracticeBySource, onS
             onClick={() => onStartPracticeBySource('jiji2026')}
           >
             📰 時事問題を解く（{jijiCount}問）
+          </button>
+        </section>
+      )}
+
+      {popBudgetCount > 0 && (
+        <section className="section section-popbudget">
+          <div className="popbudget-badge">人口・財政 特化</div>
+          <h2 className="section-title">人口・一般会計（2026年度）</h2>
+          <p className="section-desc">
+            人口・少子化・人口分布と、2026年度当初予算の一般会計に特化した重点問題です。4択・解説つき。
+          </p>
+          <button
+            className="btn-popbudget"
+            onClick={() => onStartPracticeBySource('pop_budget')}
+          >
+            📊 人口・一般会計を解く（{popBudgetCount}問）
           </button>
         </section>
       )}
